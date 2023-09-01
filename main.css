@@ -1,0 +1,78 @@
+body{
+    background-color: #30343F;
+    color: white;
+}    
+.navtitle{
+    background: linear-gradient(175deg, #F20089 27.82%, rgba(229, 0, 164, 0.00) 196.56%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Lilita One;
+}
+.SignUp{
+    border-radius: 40px;
+    background: #FFE4F3;
+    width: 80%;
+    height: 75%;
+    color: black;
+}
+.btn{
+    background-color: #F20089;
+}
+#Progbar{
+    padding: 5%;
+}
+#form{
+    padding: 5%;
+}
+.title{
+    color: #F20089;
+}
+.progress{
+    border-radius: 10px;
+}
+.pgb{
+    background-color: #F20089;
+}
+#findtutorials{
+    padding:3%;
+    height: auto;
+    width: auto;
+    background: #595758;
+}
+mark{
+    background-color: #F20089;
+    border-radius: 5px;
+}
+.pic1{
+    height: 50px;
+    width: 50px;
+}
+
+.btn-id:link, a:visited {
+    background-color: #F20089;
+    color: #595758;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+  
+.btn-id:hover, a:active {
+    background-color: white;
+    color: #F20089;
+}
+
+.link:link, a:visited {
+    background-color: #F20089;
+    color: #595758;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:hover, a:active {
+  background-color: white;
+  color: #F20089;
+}
