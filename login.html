@@ -8,9 +8,11 @@
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
     crossorigin="anonymous"></script>
@@ -18,36 +20,45 @@
     <title>Prado, Iris Heart A. CS3C</title>
 
 </head>
-<body class="vh-100 ">
+<body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary rounded-pill mt-3 ms-5 me-5">
-        <div class="container">
-            <a class="navtitle navbar-brand" href="index.html">MUSTery</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center position-relative" id="navbarNav">
-            <ul class="navbar-nav justify-content-center gap-3">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Guides</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Forum</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Best Practices</a>
-                </li>
-            </ul>
-            <a href="Student.html" class="buttonP text-white
-            text-decoration-none mx-5 px-3 py-1 rounded-pill position-absolute top-10 end-0 " style="background-color: #FF007F;">
-            Sign Up</a>      
-            </div>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a class="navbar-brand mt-2" href="#">MUSTery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Best Practices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Forum</a>
+            </li>
+            <li class="nav-item">
+              <a class="log nav-link text-white" href="Student.html">Sign Up</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </nav> 
 
 
     <section id="form">
@@ -108,5 +119,20 @@
         </div>
       </div>
     </section>
+
+
+    <script type="text/javascript">
+      var nav = document.querySelector('nav');
+  
+      window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+          nav.classList.add('shadow');
+          nav.style.backgroundColor = '#30343F'
+          } else {
+          nav.classList.remove('shadow');
+          nav.style.backgroundColor = '##30343F'
+          }
+      });
+      </script>
 </body>
 </html>

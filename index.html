@@ -7,163 +7,223 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
     rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
     crossorigin="anonymous"></script>
 
-    <title>Prado, Iris Heart A. CS3C</title>
+    <title>MUSTery</title>
 
 </head>
-<body class="vh-100 ">
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary rounded-pill mt-3 ms-5 me-5">
+<body>
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
         <div class="container">
-            <a class="navtitle navbar-brand" href="index.html">MUSTery</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <a class="navbar-brand mt-2" href="#">MUSTery</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-center position-relative" id="navbarNav">
-            <ul class="navbar-nav justify-content-center gap-3">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Guides</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Forum</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Best Practices</a>
-                </li>
-            </ul>
-            <a href="login.html" class="buttonP text-white
-            text-decoration-none mx-5 px-3 py-1 rounded-pill position-absolute top-10 end-0 " style="background-color: #FF007F;">
-            Sign In</a>      
-            </div>
-            </div>
-        </div>
-    </nav>
 
-    <section id="Progbar">
-      <figure class="text-center">
-        <blockquote class="blockquote">
-          <p>A little progress each day adds up to big result</p>
-        </blockquote>
-        <figcaption class="blockquote-footer">
-          Keep going!
-        </figcaption>
-      </figure>
-
-      <div class="title h3 ms-3 p-3">Progress Bar</div>
-
-      <div class="container row justify-content-center mt-2 ms-2 p-3 gap-5">
-        <div class="col-lg-3">
-          <div class="lead">HTML</div>
-          <div class="progress" style="height: 20px;">
-            <div class="pgb progress-bar" role="progressbar" aria-label="Example 20px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="dashboard.html">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Best Practices</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Forum</a>
+                </li>
+                <li class="nav-item">
+                  <a class="log nav-link text-white" data-bs-toggle="modal" href="#login_modal" role="button">Login</a>
+                </li>
+              </ul>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="lead">CSS</div>
-          <div class="progress" style="height: 20px;">
-            <div class="pgb progress-bar" role="progressbar" aria-label="Example 20px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="lead">Javascript</div>
-          <div class="progress" style="height: 20px;">
-            <div class="pgb progress-bar" role="progressbar" aria-label="Example 20px high" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-        </div>
-      </div>     
-    </section>
+    </nav> 
 
-    <section id="findtutorials">
-      <div class="lead text-center"><mark> Find New Lesson</mark></div>
-      <div class="container-fluid mt-3">
-        <div class="row">
-          <div class="col-2 col-lg-1">
-            <div class="row">
-              <div class="col-9">
-                <img class="pic1 rounded float-start" src="img/1.png" alt="">
+    <!--Form Login-->
+    <div class="modal fade" id="login_modal" aria-hidden="true" aria-labelledby="login_modal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="login">
+                <h1 class="log_lbl text-center">Login</h1>
+
+                <form action="">
+                  <div class="mb-3 mt-4">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password">
+                  </div>
+                  <button type="submit" class="btnLogin mt-3">LOGIN</button>
+                  <p>Not a member? <a href="#" data-bs-target="#register-Student" data-bs-toggle="modal" data-bs-dismiss="modal">Signup now</a></p>
+                </form>
               </div>
-            </div>
           </div>
-          <div class="col-10 col-lg-11">
-            <div class="row">
-              <div class="col-12">
-                <strong>Huh Yunjin</strong>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                  <em>Pamantasan ng Lungsod ng Muntinlupa</em>
+        </div>
+      </div>
+    </div>
+    
+    <!--Register-Student-->
+    <div class="modal fade" id="register-Student" aria-hidden="true" aria-labelledby="register-Student" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="register">
+    
+              <h1 class="signUp_lbl text-center">Sign Up</h1>
+              <p class="Question"> Are you a...</p>
+  
+              <form action="" class="info">
+                <div class="btn-group position-absolute top-25 start-50 translate-middle" role="group" aria-label="Basic radio toggle button group">
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+                  <label class="btn btn-outline-primary" style="background-color: #FF007F;
+                  border-color: #FF007F;" for="btnradio1">Student</label>
+                
+                  <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                  <label class="btn btn-outline-primary" style="background-color: #FF007F;
+                  border-color: #FF007F;" for="btnradio2">Educator</label>
                 </div>
-              </div>
-          </div>
 
-          <div class="row mt-2">
-            <div class="col-1"></div>
-            <div class="col-11">
+
                 <div class="row">
+                  
                   <div class="col-12">
-                    <p><strong>Learn basic algebra!</strong></p>
+                    <label for="sSEmail" class="form-label">School-issued Email Address</label>
+                    <input type="email" class="form-control" id="sSEmail" placeholder="youremail@school.edu.ph">
+                  </div>
+                  <div class="col-12 mt-2">
+                    <label for="subject" class="form-label">University/School</label>
+                    <select id="form-select" class="form-select">
+                        <option value="PLMUN">Pamantasan ng Lungsod ng Muntinlupa</option>
+                        <option value="MNHS">Muntinlupa National High School - Main</option>
+                    </select>
+                  </div>
+                  <div class="col-12 col-lg-6 col-md-6 mt-2">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  <div class="col-12 col-lg-6 col-md-6 mt-2">
+                    <label for="password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
                   </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <p>Are you ready to take your math skills to the next level?</p>
-                        <p> Learning basic algebra is a great way to unlock your potential and expand your problem-solving abilities. In this introduction,
-                            we'll cover the fundamental concepts of algebra and give you the tools you need to succeed. Let's get started!</p>
-                    </div>
+
+                <div class="text-center text-info mt-5">
+                  <a data-bs-target="#login_modal" data-bs-toggle="modal" data-bs-dismiss="modal" class="haveAcc">Already have an account?</a>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 m-3">
-                        <a class="link text-white" href="#">Start-Algebra</a>
-                    </div>
+
+                <div class="text-center mt-3">
+                  <a data-bs-target="#login_modal" data-bs-toggle="modal" data-bs-dismiss="modal" type="submit" class="btnCreate text-white"> Create my Account</a>
                 </div>
+
+              </form>
             </div>
-          </div> 
-
+          </div>
         </div>
       </div>
+    </div>
 
+    <section id="content">
+        <div class="container">
+          <div class="row">
+            <!--First-->
+            <div class="col-12">
+              <div class="cIntro row">
+                  <div class="col-12 col-lg-12">
+                      <h1 class="cTitle">
+                          LEARNING IS A MUST
+                      </h1>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                      <p class="tagline">
+                        Unlock Your Potential with MUSTery - Mastering Your Must-Haves
+                      </p>
+                  </div>
+              </div>
+          </div>
+          <!--2nd 1st column-->
+          <div class="col-12 col-lg-5 col-md-5">
+            <div class="cPicture1 row">
+              <img src="img/Picture1.png" alt="" class="Picture1">
+            </div>
+          </div>
+          
+          <!--2nd 2nd column-->
+          <div class="col-12 col-lg-6 col-md-6 offset-lg-1 offset-md-1">
+            <div class="cWe row">
+              <div class="col-12 col-lg-12">
+                <p class="cMUSTery">
+                  MUSTery comes from the combine word of  “MUST” and “MastERY”.
+                  We in MUSTery believes in Acquiring knowledge is not just a choice but a necessity for achieving  expertise.
+                </p>
+              </div>
+              <div class="col-12 col-lg-12 col-md-12 text-center mt-2">
+                  <a href="#" class="joinBtn">Join Now!</a>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
 
-    <section id="About">
-      <div class="container-fluid row mt-5 p-5">
-        <div class="col-12 col-lg-4 col-md-4">
-          <p>
-            ADDRESS <br>
-            University Road NBP Reservation 
-            Brgy. Poblacion, City of Muntinlupa.
-            Philippines, 1776
-          </p>
+    <!--<section id="offer">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col">
+                <div class="row">
+                  <div class="col-2 col-lg-5 col-md-5">
+                    <img src="img/check-mark.png" alt="" class="picture2">
+                  </div>
+                  <div class="col-2 col-lg-5 col-md-5">
+                    <img src="img/check-mark.png" alt="" class="picture2">
+                  </div>
+        
+                </div>
+                
+            </div>
+          </div>
         </div>
-        <div class="col-12 col-lg-4 col-md-4">
-          <p>
-            ADDRESS <br>
-            University Road NBP Reservation 
-            Brgy. Poblacion, City of Muntinlupa.
-            Philippines, 1776
-          </p>
-        </div>
-        <div class="col-12 col-lg-4 col-md-4">
-          <p>
-            ADDRESS <br>
-            University Road NBP Reservation 
-            Brgy. Poblacion, City of Muntinlupa.
-            Philippines, 1776
-          </p>
-        </div>
-      </div>
-    </section>
 
+    </section>-->
+
+
+
+    <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 100) {
+        nav.classList.add('shadow');
+        nav.style.backgroundColor = '#30343F'
+        } else {
+        nav.classList.remove('shadow');
+        nav.style.backgroundColor = '##30343F'
+        }
+    });
+    </script>
 </body>
 </html>
